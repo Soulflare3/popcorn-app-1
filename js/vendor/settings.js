@@ -56,17 +56,18 @@ Settings = {
                 tx.executeSql('DELETE FROM ysubs');
             });
 
-            if(Settings.get('yifyApiEndpoint') == 'http://yify-torrents.com/api/')
-                Settings.set('yifyApiEndpoint', Settings._defaultSettings['yifyApiEndpoint']);
-            if(Settings.get('yifyApiEndpointMirror') == 'http://yify.unlocktorrent.com/api/')
-                Settings.set('yifyApiEndpointMirror', Settings._defaultSettings['yifyApiEndpointMirror']);
-            if(Settings.get('updateNotificationUrl') != 'http://popcorn.cdnjd.com/update.json')
-                Settings.set('updateNotificationUrl', Settings._defaultSettings['updateNotificationUrl']);
-
-
             // Add an upgrade flag
             window.__isUpgradeInstall = true;
         }
+
+        if(Settings.get('yifyApiEndpointMirror') != 'https://yts.im/api/') {
+            Settings.set('yifyApiEndpoint', Settings._defaultSettings['yifyApiEndpoint']);
+            Settings.set('yifyApiEndpointMirror', Settings._defaultSettings['yifyApiEndpointMirror']);
+            Settings.set('checkedApiEndpoint', false);
+        }
+
+        if(Settings.get('updateNotificationUrl') != 'http://popcorn.cdnjd.com/update.json')
+            Settings.set('updateNotificationUrl', Settings._defaultSettings['updateNotificationUrl']);
 
         Settings.set('version', currentVersion);
     },

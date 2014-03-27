@@ -10,6 +10,11 @@ To allow any computer user to watch movies easily streaming from torrents, witho
 
 Under development (RC1) for Mac OSX - Windows - Linux.
 
+### Donations
+
+Feel free to donate millions of BitCoins to our BitCoin address
+`1GFjzkDW2oCV7YTwDbtGv3bvnCwz1HqbNn`
+
 ### APIs
 
 **Currently used:**

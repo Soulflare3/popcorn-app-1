@@ -28,6 +28,7 @@ app.nw
 
 js/vendor/config.js
 dist/windows/Install Popcorn Time.exe
+dist/windows/PopcornTimeSetup.exe
 dist/mac/Popcorn Time.app/
 dist/mac/Popcorn Time.zip
 
